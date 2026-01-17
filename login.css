@@ -6,25 +6,93 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+nav {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    color: #fff;
+}
+
+.nav-links li {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-links li:hover {
+    opacity: 0.7;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-links li:first-child:hover,
+.about:hover,
+.nav-links li a:hover {
+    opacity: 0.7;
+}
+.signin-nav {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.signin-nav:hover {
+    background-color: #e0e0e0;
+}
 section{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url('bg.jpg');
+    position: relative;
+    z-index: 1;
+
+
+}
+body{
+    min-height: 100vh;
+
+    background: url("abstract-background-with-low-poly-plexus-design/abstract\ low\ poly\ plexus\ design\ in\ black\ and\ white\ 0609.jpg") center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    animation: animateBg 5s linear infinite;
-
-
 }
-@keyframes animateBg {
-    100%{
-        filter: hue-rotate(360deg);
-    }
+#particles-js{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
+
 
 .login_box{
     position: relative;
@@ -81,6 +149,20 @@ h2{
     top: -5px;
 }
 
+/* to remove autofill background */
+.input_box input:-webkit-autofill,
+.input_box input:-webkit-autofill:hover,
+.input_box input:-webkit-autofill:focus,
+.input_box input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    -webkit-text-fill-color: white;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.input_box input:-webkit-autofill ~ label {
+    top: -5px;
+}
+
 .input_box .icon{
     position: absolute;
     right: 8px;
@@ -112,7 +194,7 @@ h2{
     text-decoration: underline;
 }
 
-button{
+.login_box button{
     width: 100%;
     height: 40px;
     background:white;
