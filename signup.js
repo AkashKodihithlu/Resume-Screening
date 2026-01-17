@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    document.querySelector('.signin-nav')?.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
+
     /* ===============================
        SLIDER TOGGLE
     =============================== */
