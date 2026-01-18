@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000000;
+    background: url("abstract-background-with-low-poly-plexus-design/abstract\ low\ poly\ plexus\ design\ in\ black\ and\ white\ 0609.jpg") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  color: #fff;
+  line-height: 1.4;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+#particles-js{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Nav */
+nav {
+  display: flex;
+  position: relative;
+  top: -10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  z-index: 10;
+}
+.logo { width: 160px; height: auto; }
+.nav-links { display: flex; align-items: center; list-style: none; gap: 30px; margin: 1% 0% 0% 0%; }
+.nav-links li { cursor: pointer; font-weight: 400; }
+.nav-links li a { text-decoration: none; color: #fff; }
+.nav-links li:first-child:hover, .about:hover, .nav-links li a:hover { color:#3b82f6; }
+
+/* Buttons */
+.signin, .signup { border: none; cursor: pointer; border-radius: 25px; padding: 10px 22px; font-weight: 500; transition: 0.3s; font-family: inherit; background-color: #fff; color: #000; }
+.signin:hover, .signup:hover { transform: translateY(-2px); opacity: 0.9; }
