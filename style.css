@@ -55,6 +55,7 @@ nav {
 .nav-links li:first-child:hover,
 .about:hover,
 .nav-links li a:hover {
+    
     color:#3b82f6;
 }
 
@@ -200,5 +201,4 @@ main {
     display: flex;
     gap: 25px;
 }
-
 
