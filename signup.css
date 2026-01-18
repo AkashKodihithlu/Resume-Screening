@@ -15,9 +15,20 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #000000;
-    background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+    background: url("abstract-background-with-low-poly-plexus-design/abstract\ low\ poly\ plexus\ design\ in\ black\ and\ white\ 0609.jpg") center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     overflow: hidden;
+}
+#particles-js{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* NAVBAR - Pinned to the top */
