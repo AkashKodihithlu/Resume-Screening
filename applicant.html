@@ -13,7 +13,7 @@
     }
 
     body{
-      background-color:#212121;
+      background-color:#0d1117;
       font-family: 'Poppins', sans-serif;
       
     }
@@ -29,17 +29,49 @@
       justify-content: space-between;
       padding: 1% 5%;
     }
+    .navlist{
+      background-color: #212121;
+      padding: 2%;
+      border-radius: 10px;
+      list-style: none;
+    }
+    li a{
+      text-decoration: none;
+      color: white;
+    }
+    .logo{
+      color: white;
+    }
+    .header
+  {
+    color: whitesmoke;
+  }
+ li a:hover{
+  color: blue;
+ }
+ .one{
+  margin: 2% 0 0 2%;
+ }
 
   </style>
 </head>
 <body>
   <nav>
-    <div class="logo"><img src="#" alt="Logo"></div>
+    <div class="logo"><img src="#" alt=""><span><ion-icon name="aperture"></ion-icon></span><h2>logo</h2></div>
     <ul class="navbar">
-      <li class="navlist">Find jobs</li>
-      <div class="navlist">My Applications</div>
-      <div class="navlist">Profile</div>
+      <li class="navlist"><a href="#"><span><ion-icon name="search"></ion-icon></span>Find jobs</a></li>
+      <li class="navlist"><a href="#"><span><ion-icon name="document"></ion-icon></span>My Applications</a></li>
+      <li class="navlist"><span><a href="#"><ion-icon name="person"></ion-icon>Profile</span></a></li>
     </ul>
   </nav>
+  <main>
+    <section class="one">
+      <h1 class="header">Find Your Dream Job.</h1>
+    <p class="header">Discover opportunities that match your skills and aspirations.</p>
+    </section>
+  </main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--Icon links-->
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
