@@ -50,16 +50,54 @@
   color: blue;
  }
  .one{
-  margin: 2% 0 0 2%;
+  margin: 1% 0 0 1%;
  }
+ .card{
+  background-color: rgb(0, 0, 0);
+  margin: 1% 4%;
+ }
+.flexed_row{
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 1%;  
+  background-color: #1c1135;
+  border-radius: 10px;
 
+}
+.flex1{
+  background-color: #ffffff;
+  border: 1px solid #8d8d8d;
+  border-radius: 3px;
+  margin-left: 2%;
+}
+input{
+  background-color: #fcfcfc;
+  border: none;
+  outline: none;
+  height: 40px;
+}
+.flex2{
+  display: flex;
+  gap: 20px;
+}
+button{
+  min-width: 140px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
   </style>
 </head>
 <body>
   <nav>
     <div class="logo"><img src="#" alt=""><span><ion-icon name="aperture"></ion-icon></span><h2>logo</h2></div>
     <ul class="navbar">
-      <li class="navlist"><a href="#"><span><ion-icon name="search"></ion-icon></span>Find jobs</a></li>
+      <li class="navlist"><a href="#"><span><ion-icon name="search"></ion-icon></span>  Find jobs</a></li>
       <li class="navlist"><a href="#"><span><ion-icon name="document"></ion-icon></span>My Applications</a></li>
       <li class="navlist"><span><a href="#"><ion-icon name="person"></ion-icon>Profile</span></a></li>
     </ul>
@@ -68,6 +106,18 @@
     <section class="one">
       <h1 class="header">Find Your Dream Job.</h1>
     <p class="header">Discover opportunities that match your skills and aspirations.</p>
+    </section>
+
+    <section class="two">
+      <div class="card">
+          <div class="flexed_row">
+            <div class="flex1"><ion-icon name="search" style="color: rgb(0, 0, 0);"></ion-icon><input type="text" placeholder=" Search jobs"></div>
+            <div class="flex2">
+              <button type="button" role="combobox"><span> Job type </span><ion-icon name="caret-down"></ion-icon></button>
+              <button type="button" role="combobox"><span> Engineering </span><ion-icon name="caret-down"></ion-icon></button>
+            </div>
+          </div>
+      </div>
     </section>
   </main>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--Icon links-->
