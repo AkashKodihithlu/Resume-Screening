@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicant side</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color:#212121;
+      font-family: 'Poppins', sans-serif;
+      
+    }
+    nav{
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar{
+      width: 30%;
+      display: flex;
+      color: white;
+      justify-content: space-between;
+      padding: 1% 5%;
+    }
+
+  </style>
 </head>
 <body>
-    <div id="particles-js"></div>
-    <nav>
-    <img src="" alt="" class="logo">
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li class="about">About Us</li>
-      <li><a href="features.html">Features</a></li>
-      <li>
-        <button id="signinBtn" class="signin">Sign In</button>
-        <button id="logoutBtn" class="logout-nav" style="display:none;">Logout</button>
-        <span id="usernameDisplay"></span>
-      </li>
-      <li><button id="signupBtn" class="signup">Sign Up</button></li>
+  <nav>
+    <div class="logo"><img src="#" alt="Logo"></div>
+    <ul class="navbar">
+      <li class="navlist">Find jobs</li>
+      <div class="navlist">My Applications</div>
+      <div class="navlist">Profile</div>
     </ul>
   </nav>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--Icon links-->
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="particles.js"></script>
-    <script src="script.js"></script> <!--for buttons-->
 </body>
 </html>
