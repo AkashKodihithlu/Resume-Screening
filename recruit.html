@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recruiter Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recruit.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div id="particles-js"></div>
+<header class="topbar">
+  <div class="top-left">
+    <i class="fa-solid fa-arrow-left"></i>
+    <span>Back</span>
+  </div>
+  <button class="logout">Logout</button>
+</header>
+
+<main class="viewport">
+  <section class="glass-card">
+
+    <div class="card-head">
+      <h1>Recruiter Portal</h1>
+      <p>Define job requirements and let intelligent matching do the rest.</p>
+    </div>
+
+    <form class="form">
+
+      <div class="grid">
+        <div class="field">
+          <label>Job Title</label>
+          <input type="text" placeholder="Senior Frontend Engineer">
+        </div>
+
+        <div class="field">
+          <label>Experience</label>
+          <input type="number" placeholder="3+ years">
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Required Skills</label>
+        <input type="text" placeholder="React, TypeScript, Web Performance, APIs">
+      </div>
+
+      <div class="grid">
+        <div class="field">
+          <label>Education</label>
+          <input type="text" placeholder="Bachelor’s Degree (optional)">
+        </div>
+
+        <div class="field">
+          <label>Location</label>
+          <input type="text" placeholder="Remote / Hybrid">
+        </div>
+      </div>
+
+      <button class="cta" id="findCandidates">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  Find Matching Candidates
+</button>
+
+
+    </form>
+
+  </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h3></h3>
+        <p></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="socials">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">
+      © 2025 All rights reserved.
+    </p>
+  </footer>
+<!-- LOGOUT MODAL -->
+<div class="modal-overlay" id="logoutModal">
+  <div class="modal">
+    <h3>Confirm Logout</h3>
+    <p>Do you really want to logout?</p>
+
+    <div class="modal-actions">
+      <button class="cancel-btn" id="cancelLogout">Cancel</button>
+      <button class="confirm-btn" id="confirmLogout">Logout anyway</button>
+    </div>
+  </div>
+</div>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--Icon links-->
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+<script src="logout.js"></script>
+</body>
+</html>
