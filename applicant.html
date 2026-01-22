@@ -425,8 +425,57 @@ body{
   gap: 16px;
   margin-bottom: 16px;
 
-  
+
 }
+
+.job-tags{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.tag{
+  padding: 6px 12px;
+  border-radius: 6px;
+
+  font-size: 12px;
+  font-weight: 500;
+  background:var(--bg-secondary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+.tag.primary{
+  background: var(--accent-light);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.tag.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  border-color: var(--success);
+}
+
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.salary {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 15px;
+}
+
+.posted-time {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
 </style>
 </head>
 <body>
@@ -443,7 +492,7 @@ body{
     <div class="nav-right">
       <button class="notification-btn">
         <ion-icon name="notifications-outline"></ion-icon>
-        <span class="notisfication-badge">3</span>
+        <span class="notification-badge">3</span>
       </button>
       <div class="profile-btn">
         <div class="avatar">JD</div>
