@@ -329,6 +329,40 @@ body{
   font-weight: 600;
 }
 
+
+/* job cards*/
+
+.job-Grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(340px, 1fr));
+  gap: 20px;
+
+}
+
+.jobCards{
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.jobCards::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent) 0% , #818cf8 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+
 </style>
 </head>
 <body>
@@ -413,7 +447,7 @@ body{
     </div>
   </div>
 
-  <div class="jobGrid">
+  <div class="job-Grid">
     <div class="jobCards">
       <div class="job-header">
         <div class="company-logo">TN</div>
@@ -426,17 +460,24 @@ body{
           <ion-icon name="business-outline"></ion-icon>
           TechNova
       </div>
-      <div class="job-location"></div>
+      <div class="job-location">
       <ion-icon name="location-outline"></ion-icon>
       San Francicso, CA
     </div>
+   <div class="job-tags">
+        <span class="tag primary">Remote</span>
+        <span class="tag">Full Time</span>
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+      </div>
+
     <div class="job-footer">
       <div class="salary">$100k - $140k</div>
       <div class="posted">2 days ago</div>
     </div>
 </div>
 
-<div class="job-card">
+<div class="jobCards">
   <div class="job-header">
     <div class="company-logo">CB</div>
     <button class="bookmark_outline">
@@ -465,7 +506,7 @@ body{
       </div>
 </div>
 
-<div class="job-card">
+<div class="jobCards">
       <div class="job-header">
         <div class="company-logo">DH</div>
         <button class="bookmark-btn">
@@ -494,7 +535,7 @@ body{
 
 
    
-    <div class="job-card">
+    <div class="jobCards">
       <div class="job-header">
         <div class="company-logo">DA</div>
         <button class="bookmark-btn">
@@ -523,7 +564,7 @@ body{
     </div>
 
 
-     <div class="job-card">
+     <div class="jobCards">
       <div class="job-header">
         <div class="company-logo">PM</div>
         <button class="bookmark-btn">
@@ -551,7 +592,7 @@ body{
     </div>
 
 
-<div class="job-card">
+<div class="jobCards">
       <div class="job-header">
         <div class="company-logo">MS</div>
         <button class="bookmark-btn">
@@ -579,7 +620,7 @@ body{
       </div>
 
     </div>
-    
+
     </div>
   </div>
   
