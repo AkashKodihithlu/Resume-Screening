@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - JobPortal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">JobPortal</div>
+    
+    <div class="nav-link">
+      <a href="index.html">
+        <ion-icon name="home-outline"></ion-icon>
+        Home
+      </a>
+      <a href="applications.html">
+        <ion-icon name="document-text-outline"></ion-icon>
+        Applications
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <button class="notification-btn" onclick="window.location.href='notifications.html'">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <span class="notification-badge">3</span>
+      </button>
+      <div class="profile-btn" onclick="window.location.href='profile.html'">
+        <div class="avatar">JD</div>
+        <span style="color: var(--text-secondary); font-size: 14px;">John Doe</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    
+    <!-- Page Header -->
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">My Profile</h1>
+        <p class="page-subtitle">Manage your personal information and job preferences</p>
+      </div>
+    </div>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <div class="profile-avatar-large">JD</div>
+      <div class="profile-info">
+        <h2 class="profile-name">John Doe</h2>
+        <p class="profile-role">Senior Frontend Developer</p>
+        <div class="profile-meta">
+          <div class="meta-item">
+            <ion-icon name="location-outline"></ion-icon>
+            San Francisco, CA
+          </div>
+          <div class="meta-item">
+            <ion-icon name="mail-outline"></ion-icon>
+            john.doe@email.com
+          </div>
+          <div class="meta-item">
+            <ion-icon name="call-outline"></ion-icon>
+            +1 (555) 123-4567
+          </div>
+        </div>
+        <div class="profile-actions">
+          <button class="btn-primary">
+            <ion-icon name="create-outline"></ion-icon>
+            Edit Profile
+          </button>
+          <button class="btn-secondary">
+            <ion-icon name="download-outline"></ion-icon>
+            Download Resume
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Grid -->
+    <div class="profile-grid">
+      
+      <!-- Left Column -->
+      <div>
+        
+        <!-- About -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">About Me</h3>
+            <button class="edit-btn">
+              <ion-icon name="create-outline"></ion-icon>
+              Edit
+            </button>
+          </div>
+          <p class="card-text">
+            Passionate frontend developer with 5+ years of experience building modern web applications. Specialized in React, TypeScript, and creating intuitive user interfaces. Always eager to learn new technologies and collaborate with talented teams.
+          </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Skills</h3>
+            <button class="edit-btn">
+              <ion-icon name="add-circle-outline"></ion-icon>
+              Add Skill
+            </button>
+          </div>
+          <div class="skills-list">
+            <div class="skill-tag featured">
+              React
+              <button class="remove-skill"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="skill-tag featured">
+              TypeScript
+              <button class="remove-skill"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="skill-tag featured">
+              JavaScript
+              <button class="remove-skill"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="skill-tag">
+              Node.js
+              <button class="remove-skill"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="skill-tag">
+              CSS/SCSS
+              <button class="remove-skill"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="skill-tag">
+              Git
+              <button class="remove-skill"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="skill-tag">
+              REST APIs
+              <button class="remove-skill"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <div class="skill-tag">
+              Responsive Design
+              <button class="remove-skill"><ion-icon name="close-outline"></ion-icon></button>
+            </div>
+            <button class="add-skill-btn">+ Add Skill</button>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Work Experience</h3>
+            <button class="edit-btn">
+              <ion-icon name="add-circle-outline"></ion-icon>
+              Add Experience
+            </button>
+          </div>
+          
+          <div class="timeline-item">
+            <h4 class="timeline-title">Senior Frontend Developer</h4>
+            <p class="timeline-company">TechNova Inc.</p>
+            <p class="timeline-date">Jan 2022 - Present</p>
+            <p class="timeline-desc">Leading frontend development for enterprise SaaS platform. Built reusable component library and improved performance by 40%.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4 class="timeline-title">Frontend Developer</h4>
+            <p class="timeline-company">CodeBase Solutions</p>
+            <p class="timeline-date">Jun 2020 - Dec 2021</p>
+            <p class="timeline-desc">Developed responsive web applications using React and TypeScript. Collaborated with design team to implement pixel-perfect UIs.</p>
+          </div>
+
+          <div class="timeline-item">
+            <h4 class="timeline-title">Junior Developer</h4>
+            <p class="timeline-company">StartupXYZ</p>
+            <p class="timeline-date">Jan 2019 - May 2020</p>
+            <p class="timeline-desc">Built features for customer-facing web application. Learned modern web development practices and agile methodologies.</p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Education</h3>
+            <button class="edit-btn">
+              <ion-icon name="add-circle-outline"></ion-icon>
+              Add Education
+            </button>
+          </div>
+          
+          <div class="timeline-item">
+            <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+            <p class="timeline-company">University of California, Berkeley</p>
+            <p class="timeline-date">2015 - 2019</p>
+            <p class="timeline-desc">GPA: 3.8/4.0. Focus on Software Engineering and Web Development.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column -->
+      <div>
+        
+        <!-- Stats -->
+        <div class="card">
+          <h3 class="card-title-small">Profile Stats</h3>
+          <div class="stats-grid-small">
+            <div class="stat-card-small">
+              <div class="stat-value">24</div>
+              <div class="stat-label">Applications</div>
+            </div>
+            <div class="stat-card-small">
+              <div class="stat-value">12</div>
+              <div class="stat-label">Saved Jobs</div>
+            </div>
+            <div class="stat-card-small">
+              <div class="stat-value">5</div>
+              <div class="stat-label">Interviews</div>
+            </div>
+            <div class="stat-card-small">
+              <div class="stat-value">85%</div>
+              <div class="stat-label">Complete</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Completion -->
+        <div class="card">
+          <h3 class="card-title-small">Complete Your Profile</h3>
+          
+          <div class="progress-item">
+            <div class="progress-header">
+              <span class="progress-label">Add Profile Photo</span>
+              <span class="progress-value">0%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 0%"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-header">
+              <span class="progress-label">Upload Resume</span>
+              <span class="progress-value">100%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-header">
+              <span class="progress-label">Add Work Experience</span>
+              <span class="progress-value">100%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="progress-item">
+            <div class="progress-header">
+              <span class="progress-label">Add Skills</span>
+              <span class="progress-value">100%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 100%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preferences -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title-small">Job Preferences</h3>
+            <button class="edit-btn">
+              <ion-icon name="create-outline"></ion-icon>
+              Edit
+            </button>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Desired Job Title</label>
+            <input type="text" class="form-input" value="Frontend Developer" readonly>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Preferred Work Type</label>
+            <input type="text" class="form-input" value="Remote, Hybrid" readonly>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Expected Salary Range</label>
+            <input type="text" class="form-input" value="$120k - $160k" readonly>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Preferred Locations</label>
+            <input type="text" class="form-input" value="San Francisco, CA; Remote" readonly>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Make About Me editable
+    document.querySelectorAll('.edit-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const card = this.closest('.card');
+        const cardText = card.querySelector('.card-text');
+        const formInput = card.querySelector('.form-input');
+        
+        if (cardText) {
+          const currentText = cardText.textContent.trim();
+          const textarea = document.createElement('textarea');
+          textarea.className = 'form-input';
+          textarea.style.minHeight = '120px';
+          textarea.value = currentText;
+          
+          cardText.replaceWith(textarea);
+          this.innerHTML = '<ion-icon name="checkmark-outline"></ion-icon> Save';
+          
+          // Add save functionality
+          this.onclick = function() {
+            const newText = textarea.value;
+            const p = document.createElement('p');
+            p.className = 'card-text';
+            p.textContent = newText;
+            
+            textarea.replaceWith(p);
+            this.innerHTML = '<ion-icon name="create-outline"></ion-icon> Edit';
+            this.onclick = null;
+          };
+        } else if (formInput) {
+          // Handle form inputs
+          formInput.removeAttribute('readonly');
+          formInput.focus();
+          this.innerHTML = '<ion-icon name="checkmark-outline"></ion-icon> Save';
+          
+          this.onclick = function() {
+            formInput.setAttribute('readonly', true);
+            this.innerHTML = '<ion-icon name="create-outline"></ion-icon> Edit';
+            this.onclick = null;
+          };
+        }
+      });
+    });
+
+    // Add skill functionality
+    document.querySelector('.add-skill-btn')?.addEventListener('click', function() {
+      const skillName = prompt('Enter skill name:');
+      if (skillName && skillName.trim()) {
+        const skillsList = document.querySelector('.skills-list');
+        const skillTag = document.createElement('div');
+        skillTag.className = 'skill-tag';
+        skillTag.innerHTML = `
+          ${skillName.trim()}
+          <button class="remove-skill" onclick="this.parentElement.remove()">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        `;
+        skillsList.insertBefore(skillTag, this);
+      }
+    });
+
+    // Remove skill functionality
+    document.querySelectorAll('.remove-skill').forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (confirm('Remove this skill?')) {
+          this.closest('.skill-tag').remove();
+        }
+      });
+    });
+
+    // Mark notification as read
+    document.querySelectorAll('.notification-close').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.closest('.notification-item').remove();
+      });
+    });
+  </script>
+
+</body>
+</html>
