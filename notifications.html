@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications - JobPortal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">JobPortal</div>
+    
+    <div class="nav-link">
+      <a href="index.html">
+        <ion-icon name="home-outline"></ion-icon>
+        Home
+      </a>
+      <a href="applications.html">
+        <ion-icon name="document-text-outline"></ion-icon>
+        Applications
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <button class="notification-btn active" onclick="window.location.href='notifications.html'">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <span class="notification-badge">3</span>
+      </button>
+      <div class="profile-btn" onclick="window.location.href='profile.html'">
+        <div class="avatar">JD</div>
+        <span style="color: var(--text-secondary); font-size: 14px;">John Doe</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    
+    <!-- Page Header -->
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">Notifications</h1>
+        <p class="page-subtitle">Stay updated with your job applications</p>
+      </div>
+      <button class="btn-secondary">
+        <ion-icon name="checkmark-done-outline"></ion-icon>
+        Mark All as Read
+      </button>
+    </div>
+
+    <!-- Notifications List -->
+    <div class="notifications-list">
+      
+      <!-- Notification 1 - Unread -->
+      <div class="notification-item unread">
+        <div class="notification-icon interview">
+          <ion-icon name="calendar-outline"></ion-icon>
+        </div>
+        <div class="notification-content">
+          <h4 class="notification-title">Interview Scheduled - TechNova Inc.</h4>
+          <p class="notification-text">
+            Your interview for Senior Frontend Developer position has been scheduled for January 28, 2026 at 2:00 PM PST.
+          </p>
+          <span class="notification-time">10 minutes ago</span>
+        </div>
+        <button class="notification-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Notification 2 - Unread -->
+      <div class="notification-item unread">
+        <div class="notification-icon success">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+        </div>
+        <div class="notification-content">
+          <h4 class="notification-title">Application Accepted - Digital Solutions Co.</h4>
+          <p class="notification-text">
+            Congratulations! Your application for React Developer has been accepted. The hiring team will contact you with next steps.
+          </p>
+          <span class="notification-time">2 hours ago</span>
+        </div>
+        <button class="notification-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Notification 3 - Unread -->
+      <div class="notification-item unread">
+        <div class="notification-icon info">
+          <ion-icon name="document-text-outline"></ion-icon>
+        </div>
+        <div class="notification-content">
+          <h4 class="notification-title">Application Under Review - GlobalTech Industries</h4>
+          <p class="notification-text">
+            Your application for Full Stack Engineer is now being reviewed by the hiring team. You'll hear from us within 3-5 business days.
+          </p>
+          <span class="notification-time">5 hours ago</span>
+        </div>
+        <button class="notification-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Notification 4 - Read -->
+      <div class="notification-item">
+        <div class="notification-icon warning">
+          <ion-icon name="time-outline"></ion-icon>
+        </div>
+        <div class="notification-content">
+          <h4 class="notification-title">Application Deadline Reminder</h4>
+          <p class="notification-text">
+            The application deadline for Backend Engineer at StartupHub is in 2 days. Complete your application to be considered.
+          </p>
+          <span class="notification-time">1 day ago</span>
+        </div>
+        <button class="notification-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Notification 5 - Read -->
+      <div class="notification-item">
+        <div class="notification-icon message">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="notification-content">
+          <h4 class="notification-title">New Message from Recruiter</h4>
+          <p class="notification-text">
+            Sarah Johnson from TechNova has sent you a message regarding your application. Check your messages to view the details.
+          </p>
+          <span class="notification-time">2 days ago</span>
+        </div>
+        <button class="notification-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Notification 6 - Read -->
+      <div class="notification-item">
+        <div class="notification-icon danger">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </div>
+        <div class="notification-content">
+          <h4 class="notification-title">Application Status Update - CodeBase Solutions</h4>
+          <p class="notification-text">
+            Thank you for your interest in the Frontend Lead position. Unfortunately, we have decided to move forward with other candidates at this time.
+          </p>
+          <span class="notification-time">3 days ago</span>
+        </div>
+        <button class="notification-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Notification 7 - Read -->
+      <div class="notification-item">
+        <div class="notification-icon info">
+          <ion-icon name="briefcase-outline"></ion-icon>
+        </div>
+        <div class="notification-content">
+          <h4 class="notification-title">New Job Recommendation</h4>
+          <p class="notification-text">
+            Based on your profile, we found 5 new jobs that match your skills and preferences. Check them out now!
+          </p>
+          <span class="notification-time">4 days ago</span>
+        </div>
+        <button class="notification-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <!-- Notification 8 - Read -->
+      <div class="notification-item">
+        <div class="notification-icon success">
+          <ion-icon name="checkmark-outline"></ion-icon>
+        </div>
+        <div class="notification-content">
+          <h4 class="notification-title">Profile Updated Successfully</h4>
+          <p class="notification-text">
+            Your profile information and resume have been updated. Your profile is now 85% complete.
+          </p>
+          <span class="notification-time">5 days ago</span>
+        </div>
+        <button class="notification-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    // Close notification
+    document.querySelectorAll('.notification-close').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.closest('.notification-item').style.opacity = '0';
+        setTimeout(() => {
+          this.closest('.notification-item').remove();
+          updateNotificationBadge();
+        }, 300);
+      });
+    });
+
+    // Mark all as read
+    document.querySelector('.btn-secondary').addEventListener('click', function() {
+      document.querySelectorAll('.notification-item.unread').forEach(item => {
+        item.classList.remove('unread');
+      });
+      updateNotificationBadge();
+      alert('All notifications marked as read!');
+    });
+
+    // Update notification badge
+    function updateNotificationBadge() {
+      const unreadCount = document.querySelectorAll('.notification-item.unread').length;
+      const badge = document.querySelector('.notification-badge');
+      if (badge) {
+        badge.textContent = unreadCount;
+        if (unreadCount === 0) {
+          badge.style.display = 'none';
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
