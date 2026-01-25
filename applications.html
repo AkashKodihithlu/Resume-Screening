@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Applications - JobPortal</title>
+  <link rel="stylesheet" href="astyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">JobPortal</div>
+    
+    <div class="nav-link">
+      <a href="index.html">
+        <ion-icon name="home-outline"></ion-icon>
+        Home
+      </a>
+      <a href="applications.html" class="active">
+        <ion-icon name="document-text-outline"></ion-icon>
+        Applications
+      </a>
+    </div>
+
+    <div class="nav-right">
+      <button class="notification-btn" onclick="window.location.href='notifications.html'">
+        <ion-icon name="notifications-outline"></ion-icon>
+        <span class="notification-badge">3</span>
+      </button>
+      <div class="profile-btn" onclick="window.location.href='profile.html'">
+        <div class="avatar">JD</div>
+        <span style="color: var(--text-secondary); font-size: 14px;">John Doe</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    
+    <!-- Page Header -->
+    <div class="page-header">
+      <div>
+        <h1 class="page-title">My Applications</h1>
+        <p class="page-subtitle">Track and manage your job applications</p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-header">
+          <div>
+            <div class="stat-value">24</div>
+            <div class="stat-label">Total Applied</div>
+          </div>
+          <div class="stat-icon blue">
+            <ion-icon name="paper-plane-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <div>
+            <div class="stat-value">8</div>
+            <div class="stat-label">Under Review</div>
+          </div>
+          <div class="stat-icon yellow">
+            <ion-icon name="time-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <div>
+            <div class="stat-value">5</div>
+            <div class="stat-label">Interviews</div>
+          </div>
+          <div class="stat-icon green">
+            <ion-icon name="people-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <div>
+            <div class="stat-value">11</div>
+            <div class="stat-label">Rejected</div>
+          </div>
+          <div class="stat-icon red">
+            <ion-icon name="close-circle-outline"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active">All Applications</button>
+      <button class="tab">Under Review</button>
+      <button class="tab">Interview</button>
+      <button class="tab">Accepted</button>
+      <button class="tab">Rejected</button>
+    </div>
+
+    <!-- Applications List -->
+    <div class="applications-list">
+      
+      <!-- Application 1 -->
+      <div class="application-card">
+        <div class="app-header">
+          <div class="app-left">
+            <div class="company-logo">TN</div>
+            <div class="app-info">
+              <h3 class="job-title">Senior Frontend Developer</h3>
+              <div class="company-name">
+                <ion-icon name="business-outline"></ion-icon>
+                TechNova Inc.
+              </div>
+              <div class="app-meta">
+                <div class="meta-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  San Francisco, CA
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                  Full Time
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="home-outline"></ion-icon>
+                  Remote
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-right">
+            <span class="status-badge interview">Interview</span>
+            <div class="app-actions">
+              <button class="action-btn" title="View Details">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button class="action-btn" title="Withdraw">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-title">Application Progress</div>
+          <div class="timeline-steps">
+            <div class="timeline-step completed"></div>
+            <div class="timeline-step completed"></div>
+            <div class="timeline-step current"></div>
+            <div class="timeline-step"></div>
+          </div>
+        </div>
+        <div class="app-footer">
+          <div class="app-tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">$120k - $160k</span>
+          </div>
+          <div class="applied-date">Applied 5 days ago</div>
+        </div>
+      </div>
+
+      <!-- Application 2 -->
+      <div class="application-card">
+        <div class="app-header">
+          <div class="app-left">
+            <div class="company-logo">GI</div>
+            <div class="app-info">
+              <h3 class="job-title">Full Stack Engineer</h3>
+              <div class="company-name">
+                <ion-icon name="business-outline"></ion-icon>
+                GlobalTech Industries
+              </div>
+              <div class="app-meta">
+                <div class="meta-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  New York, NY
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                  Full Time
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="business-outline"></ion-icon>
+                  Hybrid
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-right">
+            <span class="status-badge reviewing">Reviewing</span>
+            <div class="app-actions">
+              <button class="action-btn" title="View Details">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button class="action-btn" title="Withdraw">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-title">Application Progress</div>
+          <div class="timeline-steps">
+            <div class="timeline-step completed"></div>
+            <div class="timeline-step current"></div>
+            <div class="timeline-step"></div>
+            <div class="timeline-step"></div>
+          </div>
+        </div>
+        <div class="app-footer">
+          <div class="app-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">AWS</span>
+            <span class="tag">$130k - $170k</span>
+          </div>
+          <div class="applied-date">Applied 1 week ago</div>
+        </div>
+      </div>
+
+      <!-- Application 3 -->
+      <div class="application-card">
+        <div class="app-header">
+          <div class="app-left">
+            <div class="company-logo">DS</div>
+            <div class="app-info">
+              <h3 class="job-title">React Developer</h3>
+              <div class="company-name">
+                <ion-icon name="business-outline"></ion-icon>
+                Digital Solutions Co.
+              </div>
+              <div class="app-meta">
+                <div class="meta-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  Austin, TX
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                  Full Time
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="home-outline"></ion-icon>
+                  Remote
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-right">
+            <span class="status-badge accepted">Accepted</span>
+            <div class="app-actions">
+              <button class="action-btn" title="View Details">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button class="action-btn" title="Download Offer">
+                <ion-icon name="download-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-title">Application Progress</div>
+          <div class="timeline-steps">
+            <div class="timeline-step completed"></div>
+            <div class="timeline-step completed"></div>
+            <div class="timeline-step completed"></div>
+            <div class="timeline-step completed"></div>
+          </div>
+        </div>
+        <div class="app-footer">
+          <div class="app-tags">
+            <span class="tag">React</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">$110k - $140k</span>
+          </div>
+          <div class="applied-date">Applied 2 weeks ago</div>
+        </div>
+      </div>
+
+      <!-- Application 4 -->
+      <div class="application-card">
+        <div class="app-header">
+          <div class="app-left">
+            <div class="company-logo">CB</div>
+            <div class="app-info">
+              <h3 class="job-title">Frontend Lead</h3>
+              <div class="company-name">
+                <ion-icon name="business-outline"></ion-icon>
+                CodeBase Solutions
+              </div>
+              <div class="app-meta">
+                <div class="meta-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  Seattle, WA
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                  Full Time
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="business-outline"></ion-icon>
+                  Onsite
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-right">
+            <span class="status-badge rejected">Rejected</span>
+            <div class="app-actions">
+              <button class="action-btn" title="View Details">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button class="action-btn" title="Delete">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="app-footer">
+          <div class="app-tags">
+            <span class="tag">React</span>
+            <span class="tag">Leadership</span>
+            <span class="tag">$140k - $180k</span>
+          </div>
+          <div class="applied-date">Applied 3 weeks ago</div>
+        </div>
+      </div>
+
+      <!-- Application 5 -->
+      <div class="application-card">
+        <div class="app-header">
+          <div class="app-left">
+            <div class="company-logo">IW</div>
+            <div class="app-info">
+              <h3 class="job-title">UI Developer</h3>
+              <div class="company-name">
+                <ion-icon name="business-outline"></ion-icon>
+                InnoWave Tech
+              </div>
+              <div class="app-meta">
+                <div class="meta-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  Boston, MA
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                  Full Time
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="home-outline"></ion-icon>
+                  Remote
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-right">
+            <span class="status-badge pending">Pending</span>
+            <div class="app-actions">
+              <button class="action-btn" title="View Details">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button class="action-btn" title="Withdraw">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-title">Application Progress</div>
+          <div class="timeline-steps">
+            <div class="timeline-step current"></div>
+            <div class="timeline-step"></div>
+            <div class="timeline-step"></div>
+            <div class="timeline-step"></div>
+          </div>
+        </div>
+        <div class="app-footer">
+          <div class="app-tags">
+            <span class="tag">CSS</span>
+            <span class="tag">HTML</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">$90k - $120k</span>
+          </div>
+          <div class="applied-date">Applied 2 days ago</div>
+        </div>
+      </div>
+
+      <!-- Application 6 -->
+      <div class="application-card">
+        <div class="app-header">
+          <div class="app-left">
+            <div class="company-logo">DA</div>
+            <div class="app-info">
+              <h3 class="job-title">Data Analyst</h3>
+              <div class="company-name">
+                <ion-icon name="business-outline"></ion-icon>
+                DataAnalytics Pro
+              </div>
+              <div class="app-meta">
+                <div class="meta-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  Seattle, WA
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                  Full Time
+                </div>
+                <div class="meta-item">
+                  <ion-icon name="home-outline"></ion-icon>
+                  Remote
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="app-right">
+            <span class="status-badge reviewing">Reviewing</span>
+            <div class="app-actions">
+              <button class="action-btn" title="View Details">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+              <button class="action-btn" title="Withdraw">
+                <ion-icon name="trash-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-title">Application Progress</div>
+          <div class="timeline-steps">
+            <div class="timeline-step completed"></div>
+            <div class="timeline-step current"></div>
+            <div class="timeline-step"></div>
+            <div class="timeline-step"></div>
+          </div>
+        </div>
+        <div class="app-footer">
+          <div class="app-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">Excel</span>
+            <span class="tag">$90k - $120k</span>
+          </div>
+          <div class="applied-date">Applied 1 week ago</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
